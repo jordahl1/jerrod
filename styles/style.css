@@ -1,0 +1,16 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+#carouselControls {
+  max-width: 600px;
+}
