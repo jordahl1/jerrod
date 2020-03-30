@@ -14,3 +14,7 @@ h1 {
 #carouselControls {
   max-width: 600px;
 }
+
+.j-photo img {
+  max-height: 533px;
+}
