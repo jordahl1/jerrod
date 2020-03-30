@@ -18,3 +18,15 @@ h1 {
 .j-photo img {
   max-height: 533px;
 }
+
+.carousel-container {
+  max-width: 533px;
+}
+
+.j-carousel-arrow {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none; 
+}

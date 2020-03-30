@@ -42,17 +42,37 @@
       <div class="col-12 col-lg-9 mt-4 border-left">
         <span class="d-flex justify-content-lg-center">
           <div>
-            <div class="bg-white p-2 mb-2 border d-inline-block j-photo">
-              <img src="/jerrod-h/images/01_pointlandfront.png" />
-            </div>
-            <div class="bg-white p-2 mb-2 border d-inline-block j-photo">
-              <img src="/jerrod-h/images/02_pointlandsleeve.png" />
-            </div>
-            <div class="bg-white p-2 mb-2 border d-inline-block j-photo">
-              <img src="/jerrod-h/images/03_pointlandhands.jpg" />
-            </div>
-            <div class="bg-white p-2 mb-2 border d-inline-block j-photo">
-              <img src="/jerrod-h/images/04_pointlandback.png" />
+            <div class="carousel-container">
+              <div class="d-flex justify-content-end">
+                <div id="carouselPrev" class="p-2 j-carousel-arrow">&lt;</div>
+                <div class="p-2">|</div>
+                <div id="carouselNext" class="p-2 j-carousel-arrow">&gt;</div>
+              </div>
+              <div id="pointlandCarousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="bg-white p-2 mb-2 border d-inline-block j-photo">
+                      <img src="/jerrod-h/images/01_pointlandfront.png" alt="Cover of the album"/>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="bg-white p-2 mb-2 border d-inline-block j-photo">
+                      <img src="/jerrod-h/images/02_pointlandsleeve.png" alt="Sleeve of the album"/>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="bg-white p-2 mb-2 border d-inline-block j-photo">
+                      <img src="/jerrod-h/images/03_pointlandhands.jpg" alt="Image of Hands"/>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="bg-white p-2 mb-2 border d-inline-block j-photo">
+                      <img src="/jerrod-h/images/04_pointlandback.png" alt="Back of the album"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="mb-3">
               <small class="text-muted">
@@ -100,6 +120,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script>
+    $('#carouselNext').click(event => { $('.carousel').carousel('next') })
+    $('#carouselPrev').click(event => { $('.carousel').carousel('prev') })
+  </script>
 </body>
 
 </html>
