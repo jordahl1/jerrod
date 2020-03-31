@@ -30,3 +30,8 @@ h1 {
   -ms-user-select: none; 
   user-select: none; 
 }
+
+/*override bootstrap breadcrumb separator*/
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "|";
+}
