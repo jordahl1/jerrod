@@ -35,3 +35,11 @@ h1 {
 .breadcrumb-item + .breadcrumb-item::before {
   content: "|";
 }
+
+.j-bg {
+  background-color: rgb(252, 250, 241);
+}
+
+a {
+  color: rgb(0, 37, 84);
+}
