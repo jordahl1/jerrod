@@ -3,3 +3,6 @@ images
 
 #ignore files
 files
+
+# ignore htaccess file
+.htaccess
